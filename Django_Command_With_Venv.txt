@@ -1,0 +1,35 @@
+# With Venv
+
+python --version
+python -m django --version
+
+
+create vertual 
+python -m venv myenv
+
+C:\Users\LJENG\Desktop>cd myenv
+
+C:\Users\LJENG\Desktop\myenv>cd Scripts
+
+C:\Users\LJENG\Desktop\myenv\Scripts>activate
+
+(myenv) C:\Users\LJENG\Desktop\myenv\Scripts>
+
+(myenv) C:\Users\LJENG\Desktop\myenv\Scripts>deactivate
+C:\Users\LJENG\Desktop\myenv\Scripts>activate
+
+(myenv) C:\Users\LJENG\Desktop\myenv\Scripts>cd..
+
+(myenv) C:\Users\LJENG\Desktop\myenv>python -m django --version
+C:\Users\LJENG\Desktop\myenv\Scripts\python.exe: No module named django
+
+(myenv) C:\Users\LJENG\Desktop\myenv>python -m pip install django
+
+(myenv) C:\Users\LJENG\Desktop\myenv>python -m django --version
+6.0.5
+(myenv) C:\Users\LJENG\Desktop\myenv>cd..
+
+(myenv) C:\Users\LJENG\Desktop>django-admin --version
+6.0.5
+
+(myenv) C:\Users\LJENG\Desktop>python -m django startproject demo
